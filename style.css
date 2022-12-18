@@ -1,0 +1,522 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x:hidden;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    opacity: 1;
+    position: relative;
+    bottom: 25px;
+    right: 20px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.nav-links a {
+    font-family: 'Unbounded', cursive;
+    color: #fff;
+}
+
+
+/* LOGO */
+.logo {
+    color: rgb(230, 0, 230);
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: rgb(221, 76, 125);
+    scale: 1.1;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.main img {
+    position: relative;
+    left: 570px;
+    top: 20px;
+    width: 50%;
+}
+
+.main h1 {
+    animation: bounceInLeft;
+    animation-duration: 1s;
+    position: relative;
+    left: 70px;
+    bottom: 300px;
+    color: rgb(212, 165, 183);
+    font-size: 50px;
+}
+
+.main h2 {
+    position: relative;
+    bottom: 320px;
+    color: azure;
+    font-size: 50px;
+}
+
+.main span {
+    color: rgb(235, 4, 61);
+}
+
+.int {
+    font-size: 30px;
+    color: azure;
+    position: relative;
+    bottom: 200px;
+    left: 170px;
+}
+
+.int span {
+    color: rgb(110, 77, 202);
+}
+
+.int i {
+    padding: 8px;
+}
+
+.int h2 {
+    animation: bounceInDown;
+    animation-duration: 1s;
+    position: relative;
+    left: 500px;
+}
+
+.write span {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 70px;
+    color: rgb(211, 16, 218);
+    position: relative;
+    bottom: 200px;
+    left: 400px;
+}
+
+.intro h1 {
+    animation: backInLeft;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    left: 500px;
+    font-size: 50px;
+    color: rgb(25, 74, 235);
+
+}
+
+.intro span {
+    color: rgb(255, 255, 255);
+}
+
+.intro h3 {
+    animation: backInLeft;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    left: 300px;
+    width: 60%;
+    font-size: 30px;
+    color: rgb(245, 239, 239);
+}
+
+.findme h1 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: 50px;
+    left: 760px;
+    font-size: 50px;
+    color: rgb(206, 12, 180);
+
+}
+
+.findme h2 {
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    font-size: 30px;
+    left: 700px;
+    color: rgb(245, 231, 231);
+}
+
+.findme span {
+    color: rgb(238, 18, 84);
+
+}
+
+.icons {
+    position: relative;
+    left: 800px;
+    font-size: 50px;
+}
+
+.icons i:hover {
+    scale: 1.2;
+}
+
+.icons i {
+    padding: 10px;
+    color: rgb(188, 182, 201);
+}
+
+.emoji {
+    font-size: calc(35px + 4vw);
+    min-width: 1.4em;
+    margin: 0.3em 0.4em;
+    text-align: center;
+}
+
+.emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.wave::after {
+    content: '✋';
+    --emoji: '👋';
+    animation-name: twoFrames;
+    animation-duration: 1s;
+}
+
+@keyframes twoFrames {
+    50% {
+        content: var(--emoji);
+    }
+}
+
+@keyframes threeFrames {
+    33.333% {
+        content: var(--emoji-1);
+    }
+
+    66.666% {
+        content: var(--emoji-2);
+    }
+}
+
+.about h1 {
+    animation: bounceInDown;
+    animation-duration: 2s;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    color: azure;
+    position: relative;
+    top: 100px;
+    left: 500px;
+}
+
+.about span {
+    color: rgb(160, 11, 219);
+}
+
+.about h2 {
+    width: 40%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: azure;
+    position: relative;
+    top: 100px;
+    left: 400px;
+}
+
+.about h3 {
+    position: relative;
+    left: 200px;
+    top: 100px;
+    font-size: 40px;
+    width: 180%;
+    color: azure;
+    font-weight: 600;
+}
+
+.about p {
+    position: relative;
+    left: 200px;
+    top: 100px;
+    font-size: 40px;
+    width: 180%;
+    color: azure;
+    font-weight: 600;
+}
+
+#project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+
+.project-heading h2 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    color: azure;
+    font-size: 50px;
+}
+
+.project-heading h1 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    left: 600px;
+    bottom: 40px;
+    font-size: 50px;
+    color: white;
+}
+
+.project-heading span {
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    color: rgb(226, 23, 165);
+}
+
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.portfolio-box {
+    opacity: 1;
+    width: 330px;
+    padding: 15px;
+    border: 5px solid #5d19db;
+    margin: 20px;
+}
+
+.portfolio-box:hover {
+    scale: 1.2;
+}
+
+
+.portfolio-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project-heading h3 {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    color: white;
+    font-size: 2.7em;
+    font-weight: 500;
+}
+
+.project-heading h4 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 2.7em;
+    font-weight: 500;
+}
+
+:root {
+    --square-size: 15px;
+    --square-gap: 5px;
+    --week-width: calc(var(--square-size) + var(--square-gap));
+}
+
+.months {
+    grid-area: months;
+}
+
+.days {
+    grid-area: days;
+}
+
+.squares {
+    grid-area: squares;
+}
+
+.graph {
+    display: inline-grid;
+    grid-template-areas: "empty months"
+        "days squares";
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+}
+
+.months {
+    display: grid;
+    grid-template-columns: calc(var(--week-width) * 4)
+        /* Jan */
+        calc(var(--week-width) * 4)
+        /* Feb */
+        calc(var(--week-width) * 4)
+        /* Mar */
+        calc(var(--week-width) * 5)
+        /* Apr */
+        calc(var(--week-width) * 4)
+        /* May */
+        calc(var(--week-width) * 4)
+        /* Jun */
+        calc(var(--week-width) * 5)
+        /* Jul */
+        calc(var(--week-width) * 4)
+        /* Aug */
+        calc(var(--week-width) * 4)
+        /* Sep */
+        calc(var(--week-width) * 5)
+        /* Oct */
+        calc(var(--week-width) * 4)
+        /* Nov */
+        calc(var(--week-width) * 5)
+        /* Dec */
+    ;
+}
+
+.days,
+.squares {
+ 
+    display: grid;
+    grid-gap: var(--square-gap);
+    grid-template-rows: repeat(7, var(--square-size));
+}
+
+.squares {
+    grid-auto-flow: column;
+    grid-auto-columns: var(--square-size);
+}
+
+.graph {
+    position: relative;
+    left: 50px;
+    border: 1px #e1e4e8 solid;
+    margin: 20px;
+}
+
+.days li:nth-child(odd) {
+    visibility: hidden;
+}
+
+.squares li {
+    background-color: #ebedf0;
+}
+
+.squares li[data-level="1"] {
+    background-color: #ffecec;
+}
+
+.squares li[data-level="2"] {
+    background-color: #2dcf2d;
+}
+
+.squares li[data-level="3"] {
+    background-color: #43754d;
+}
+
+li {
+    font-size: 20px;
+    color: azure;
+    list-style: none;
+}
+
+.gap {
+    font-size: 40px;
+    color: azure;
+    font-weight: 500;
+    position: relative;
+    left: 400px;
+}
+
+.gap span {
+    color: rgb(212, 15, 212);
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        width: 1200px;
+    }
+    .navbar li {
+        font-size: 40px;
+    }
+    .logo{
+        font-size:36px;
+    }
+    .main h1{
+        font-size:45px;
+    }
+    .main h2{
+        font-size:35px;
+    }
+    .main img{
+        width:200%;
+    }
+    .int h1{
+        font-size:47px;
+        width:200%;
+    }
+    .write span{
+        font-size:40px;
+    }
+    .intro h1{
+        font-size:47px;
+        width:200%;
+    }
+    .intro h3{
+        font-size:40px;
+        width:200%;
+    }
+    .findme h2{
+        width:160%;
+    }
+    .about h2{
+        width:180%;
+    }
+    .portfolio-container {
+        align-content: space-around;
+        position: relative;
+        right: 30px;
+        display: grid;
+        grid-template-columns: 400px auto 200px;
+        padding: 70px;
+    }
+    .project-heading h2 {
+        position: relative;
+        left: 400px;
+    }
+    .project-heading h4 {
+        position: relative;
+        left: 400px;
+    }
+    .gap h1{
+        position:relative;
+        left:50px;
+        font-size:50px;
+    }
+}
